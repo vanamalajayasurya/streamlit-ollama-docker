@@ -138,7 +138,7 @@ button[data-baseweb="tab"] { font-weight: 700; }
 button[data-baseweb="tab"][aria-selected="true"] { color: var(--wine); }
 div[data-baseweb="tab-highlight"] { background: var(--wine) !important; }
 [data-testid="stExpander"] { background: var(--card); border: 1px solid var(--line); border-radius: 14px; }
-[data-testid="stVerticalBlockBorderWrapper"] { border-radius: 14px; }
+/* (old Streamlit wraps every block in stVerticalBlockBorderWrapper: never style it) */
 [data-testid="stForm"] { border: 0; padding: 0; }
 
 /* buttons */
@@ -297,6 +297,18 @@ div[data-baseweb="popover"] li:hover { background: #f3e7c6 !important; }
 [data-testid="stSlider"] div[role="slider"] { background-color: var(--wine) !important; }
 
 /* top navigation: pill tabs */
+div[data-testid="stRadio"],
+div[data-testid="stRadio"] > div,
+div[data-testid="stRadioGroup"],
+div[data-testid="stRadioGroup"] > div,
+div[role="radiogroup"] {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+div[data-testid="stRadio"] {
+  padding: 0 !important;
+}
 div[role="radiogroup"] { gap: 8px; flex-wrap: wrap; justify-content: flex-end; }
 div[role="radiogroup"] label[data-baseweb="radio"] { background: transparent; border: 1.5px solid rgba(127,1,31,.28);
   border-radius: 999px; padding: 7px 20px; margin: 0; cursor: pointer; transition: background .18s, transform .18s, box-shadow .18s; }
@@ -318,7 +330,9 @@ div[role="radiogroup"] label[data-baseweb="radio"]:has(input:checked) p { color:
 .hero2 .hero-sub { max-width: 56ch; line-height: 1.55; opacity: .9; position: relative; z-index: 1; }
 
 /* cards */
-[data-testid="stVerticalBlockBorderWrapper"] { background: var(--paper); border: 1px solid var(--line) !important; border-radius: 22px; box-shadow: var(--shadow); }
+[class*="st-key-card_"] { background: var(--paper); border: 1px solid var(--line); border-radius: 22px; box-shadow: var(--shadow);
+  padding: 1.1rem 0 1.2rem; overflow: hidden; }
+[class*="st-key-card_"] .chart-title { padding: 0 1.4rem; }
 .card { background: var(--paper); border-radius: 22px; box-shadow: var(--shadow); }
 [data-testid="stExpander"] { background: var(--paper); border-radius: 18px; margin-top: 8px; }
 .step { font-family: 'Bricolage Grotesque', sans-serif; font-size: 1.3rem; font-weight: 800; color: var(--wine); margin-bottom: .6rem; }
@@ -376,6 +390,12 @@ div[data-testid="stRadioGroup"] { gap: 8px; flex-wrap: wrap; justify-content: fl
   width: fit-content; max-width: 82%; margin-left: auto; flex-direction: row-reverse; }
 [data-testid="stChatMessage"]:has([aria-label="Chat message from user"]) * { color: var(--sand) !important; }
 label[data-testid="stRadioOption"] { padding: 7px 17px; }
+div[role="radiogroup"] label[data-baseweb="radio"] > div { margin-left: 0 !important; }
+div[role="radiogroup"] label[data-baseweb="radio"] { padding: 7px 17px; }
+/* values for rings / splash letters (inline style attributes are stripped by older Streamlit) */
+.sc0{--p:0}.sc1{--p:1}.sc2{--p:2}.sc3{--p:3}.sc4{--p:4}.sc5{--p:5}.sc6{--p:6}.sc7{--p:7}.sc8{--p:8}.sc9{--p:9}.sc10{--p:10}.sc11{--p:11}.sc12{--p:12}.sc13{--p:13}.sc14{--p:14}.sc15{--p:15}.sc16{--p:16}.sc17{--p:17}.sc18{--p:18}.sc19{--p:19}.sc20{--p:20}.sc21{--p:21}.sc22{--p:22}.sc23{--p:23}.sc24{--p:24}.sc25{--p:25}.sc26{--p:26}.sc27{--p:27}.sc28{--p:28}.sc29{--p:29}.sc30{--p:30}.sc31{--p:31}.sc32{--p:32}.sc33{--p:33}.sc34{--p:34}.sc35{--p:35}.sc36{--p:36}.sc37{--p:37}.sc38{--p:38}.sc39{--p:39}.sc40{--p:40}.sc41{--p:41}.sc42{--p:42}.sc43{--p:43}.sc44{--p:44}.sc45{--p:45}.sc46{--p:46}.sc47{--p:47}.sc48{--p:48}.sc49{--p:49}.sc50{--p:50}.sc51{--p:51}.sc52{--p:52}.sc53{--p:53}.sc54{--p:54}.sc55{--p:55}.sc56{--p:56}.sc57{--p:57}.sc58{--p:58}.sc59{--p:59}.sc60{--p:60}.sc61{--p:61}.sc62{--p:62}.sc63{--p:63}.sc64{--p:64}.sc65{--p:65}.sc66{--p:66}.sc67{--p:67}.sc68{--p:68}.sc69{--p:69}.sc70{--p:70}.sc71{--p:71}.sc72{--p:72}.sc73{--p:73}.sc74{--p:74}.sc75{--p:75}.sc76{--p:76}.sc77{--p:77}.sc78{--p:78}.sc79{--p:79}.sc80{--p:80}.sc81{--p:81}.sc82{--p:82}.sc83{--p:83}.sc84{--p:84}.sc85{--p:85}.sc86{--p:86}.sc87{--p:87}.sc88{--p:88}.sc89{--p:89}.sc90{--p:90}.sc91{--p:91}.sc92{--p:92}.sc93{--p:93}.sc94{--p:94}.sc95{--p:95}.sc96{--p:96}.sc97{--p:97}.sc98{--p:98}.sc99{--p:99}.sc100{--p:100}.li0{--i:0}.li1{--i:1}.li2{--i:2}.li3{--i:3}.li4{--i:4}.li5{--i:5}.li6{--i:6}.li7{--i:7}.li8{--i:8}.li9{--i:9}.li10{--i:10}.li11{--i:11}.li12{--i:12}.li13{--i:13}.li14{--i:14}.li15{--i:15}
+.rc-excellent{--c:#2f7d4f}.rc-good{--c:#7F011F}.rc-needs{--c:#d49a2a}.rc-weak{--c:#a89b86}
+.spacer{height:1.4rem}
 </style>
 """,
     unsafe_allow_html=True,
@@ -384,6 +404,20 @@ label[data-testid="stRadioOption"] { padding: 7px 17px; }
 
 # ---------------------------------------------------------------- helpers
 esc = html.escape
+
+
+_card_count = 0
+
+
+def card():
+    """A rounded card. Uses a keyed container (class st-key-card_N) so the styling hits only cards,
+    in old and new Streamlit alike (old versions wrap *every* block in a border wrapper)."""
+    global _card_count
+    _card_count += 1
+    try:
+        return st.container(key=f"card_{_card_count}")
+    except TypeError:  # very old Streamlit without container keys
+        return st.container(border=True)
 
 
 @st.cache_data(ttl=30)
@@ -1039,7 +1073,7 @@ def show_chart(chart):
 
 def _style(chart):
     return (
-        chart.configure(background="rgba(0,0,0,0)")
+        chart.properties(padding={"left": 18, "right": 18, "top": 6, "bottom": 10}).configure(background="rgba(0,0,0,0)")
         .configure_view(strokeWidth=0)
         .configure_axis(labelColor="#5b4a45", titleColor="#5b4a45", gridColor="#e6d9b8",
                         domainColor="#d8c9a3", tickColor="#d8c9a3", labelFontSize=12, titleFontSize=12)
@@ -1171,7 +1205,7 @@ def candidate_card(c: dict, rank: int) -> str:
         sub.append(f"Skills {d['skill_score']}")
     return (
         f'<div class="cand2 {band}">'
-        f'<div class="c2ring" style="--p:{c["score"]}"><div class="c2in"><b>{c["score"]}</b><small>/100</small></div></div>'
+        f'<div class="c2ring sc{c["score"]}"><div class="c2in"><b>{c["score"]}</b><small>/100</small></div></div>'
         f'<div class="c2body"><div class="c2top"><span class="c2rank">#{rank}</span>'
         f'<span class="c2name">{esc(c["name"])}</span><span class="badge">{esc(c["label"])}</span></div>'
         f'<div class="cmeta">{meta}</div>'
@@ -1199,16 +1233,16 @@ def render_insights(rows: list):
     st.markdown('<div class="section-title">Insights</div>', unsafe_allow_html=True)
     c1, c2 = st.columns([3, 2], gap="large")
     with c1:
-        with st.container(border=True):
+        with card():
             st.markdown('<div class="chart-title">Score by candidate</div>', unsafe_allow_html=True)
             show_chart(chart_scores(rows))
     with c2:
-        with st.container(border=True):
+        with card():
             st.markdown('<div class="chart-title">Fit breakdown</div>', unsafe_allow_html=True)
             show_chart(chart_donut([r["label"] for r in rows], BAND_COLORS))
     gaps = chart_gaps(rows)
     if gaps is not None:
-        with st.container(border=True):
+        with card():
             st.markdown('<div class="chart-title">Most common missing skills</div>', unsafe_allow_html=True)
             show_chart(gaps)
 
@@ -1286,16 +1320,16 @@ def render_score(res: dict):
         "Excellent" if total >= 85 else "Good" if total >= 70
         else "Needs work" if total >= 50 else "Weak"
     )
-    color = {"Excellent": "#2f7d4f", "Good": WINE, "Needs work": "#d49a2a", "Weak": "#a89b86"}[label]
+    ring_class = {"Excellent": "rc-excellent", "Good": "rc-good", "Needs work": "rc-needs", "Weak": "rc-weak"}[label]
     c1, c2 = st.columns([1, 2], gap="large")
     with c1:
         st.markdown(
-            f'<div class="ring" style="--p:{total};--c:{color}"><div class="ring-in">'
+            f'<div class="ring sc{int(total)} {ring_class}"><div class="ring-in">'
             f"<span>{total}</span><small>out of 100 | {label}</small></div></div>",
             unsafe_allow_html=True,
         )
     with c2:
-        with st.container(border=True):
+        with card():
             st.markdown('<div class="chart-title">Score by section</div>', unsafe_allow_html=True)
             show_chart(chart_resume_parts(res["parts"]))
     if res["tips"]:
@@ -1306,7 +1340,7 @@ def render_score(res: dict):
 
 # ---------------------------------------------------------------- splash + login
 def splash_html() -> str:
-    letters = "".join(f'<span style="--i:{i}">{ch}</span>' for i, ch in enumerate("TalentMatch"))
+    letters = "".join(f'<span class="li{i}">{ch}</span>' for i, ch in enumerate("TalentMatch"))
     return (
         '<div class="splash"><div class="splash-glow"></div><div class="splash-inner">'
         '<div class="mark light"><i></i><i></i></div>'
@@ -1468,7 +1502,14 @@ with nav_l:
         unsafe_allow_html=True,
     )
 with nav_r:
-    mode = st.radio("Mode", MODES, horizontal=True, label_visibility="collapsed")
+    mode = st.radio(
+        "Mode",
+        MODES,
+        index=0,
+        horizontal=True,
+        label_visibility="collapsed",
+        key="top_mode",
+    )
 
 with st.sidebar:
     st.markdown('<div class="side-title">Settings</div>', unsafe_allow_html=True)
@@ -1670,22 +1711,22 @@ elif mode == "Dashboard":
         stat_tiles(allrows)
         c1, c2 = st.columns(2, gap="large")
         with c1:
-            with st.container(border=True):
+            with card():
                 st.markdown('<div class="chart-title">Pipeline by status</div>', unsafe_allow_html=True)
                 show_chart(chart_donut([r["status"] for r in allrows], STATUS_COLORS))
         with c2:
-            with st.container(border=True):
+            with card():
                 st.markdown('<div class="chart-title">Fit breakdown</div>', unsafe_allow_html=True)
                 show_chart(chart_donut([r["label"] for r in allrows], BAND_COLORS))
-        with st.container(border=True):
+        with card():
             st.markdown('<div class="chart-title">How scores are spread</div>', unsafe_allow_html=True)
             show_chart(chart_distribution(allrows))
-        with st.container(border=True):
+        with card():
             st.markdown('<div class="chart-title">Average score by job</div>', unsafe_allow_html=True)
             show_chart(chart_jobs(allrows))
         gaps = chart_gaps(allrows)
         if gaps is not None:
-            with st.container(border=True):
+            with card():
                 st.markdown('<div class="chart-title">Most common missing skills</div>', unsafe_allow_html=True)
                 show_chart(gaps)
 
@@ -1695,7 +1736,7 @@ elif mode == "Chat":
     if pdf:
         st.sidebar.success(f"PDF loaded ({len(resume_text)} chars)")
 
-    st.markdown('<div style="height:1.4rem"></div>', unsafe_allow_html=True)
+    st.markdown('<div class="spacer"></div>', unsafe_allow_html=True)
     empty_slot = st.empty()
     if not st.session_state.messages:
         empty_slot.markdown(
