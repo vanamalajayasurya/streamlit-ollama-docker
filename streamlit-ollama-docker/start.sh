@@ -6,7 +6,7 @@ set -e
 
 PORT="${PORT:-8501}"
 OLLAMA_HOST="${OLLAMA_HOST:-http://localhost:11434}"
-MODEL="${OLLAMA_MODEL:-llama3.2:1b}"
+MODEL="${OLLAMA_MODEL:-qwen2.5:0.5b}"
 
 export OLLAMA_HOST
 

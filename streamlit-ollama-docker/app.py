@@ -23,7 +23,7 @@ from urllib.parse import quote
 
 APP_NAME = "TalentMatch AI"
 OLLAMA_HOST = os.getenv("OLLAMA_HOST", "http://localhost:11434")
-DEFAULT_MODEL = os.getenv("OLLAMA_MODEL", "llama3.2:1b")
+DEFAULT_MODEL = os.getenv("OLLAMA_MODEL", "qwen2.5:0.5b")
 DB_PATH = os.getenv("DB_PATH", "/data/recruit.db")
 NUM_CTX = int(os.getenv("OLLAMA_NUM_CTX", "4096"))
 client = ollama.Client(host=OLLAMA_HOST, timeout=600)
