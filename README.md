@@ -17,7 +17,7 @@
 **Screen resumes with a local AI model.** Paste a job description, upload resume PDFs, and get a ranked shortlist with the skills each candidate has, the skills they lack, and interview questions to ask. Everything runs on your own machine through [Ollama](https://ollama.com), so resumes never leave your infrastructure.
 
 <p align="center">
-  <img src="docs/demo.gif" alt="TalentMatch AI walkthrough: screen candidates, candidates, dashboard, chat, resume score" width="900" />
+  <img src="demo.gif" alt="TalentMatch AI walkthrough: screen candidates, candidates, dashboard, chat, resume score" width="900" />
 </p>
 
 ## Features
@@ -38,29 +38,29 @@
 ### Screen candidates
 Add the job on the left and the resumes on the right, choose whether to generate interview questions, then press **Screen resumes**.
 
-![Screen candidates](docs/screenshots/screen-candidates.png)
+![Screen candidates](Screenshot_2026-10-25_233505.png)
 
-![Job and resume form](docs/screenshots/job-form.png)
+![Job and resume form](Screenshot_2026-10-25_235117.png)
 
 ### Candidates
 Saved results grouped by job, with filters, status changes and CSV export.
 
-![Candidates](docs/screenshots/candidates.png)
+![Candidates](Screenshot_2026-10-25_233448.png)
 
 ### Dashboard
 A quick look at the whole hiring pipeline across every job.
 
-![Dashboard](docs/screenshots/dashboard.png)
+![Dashboard](Screenshot_2026-10-25_233520.png)
 
 ### Chat
 Ask questions or chat with an uploaded PDF. Turn on **Speak replies** to hear answers read aloud.
 
-![Chat](docs/screenshots/chat.png)
+![Chat](Screenshot_2026-10-25_233616.png)
 
 ### Resume score
 Check how complete and strong a resume is without a job description.
 
-![Resume score](docs/screenshots/resume-score.png)
+![Resume score](Screenshot_2026-10-25_233632.png)
 
 ## Tech stack
 
@@ -160,7 +160,8 @@ The AI score is a screening aid, not a hiring decision. Always review shortliste
 ├── docker-compose.yml     # ollama + model-puller + app
 ├── requirements.txt
 ├── .streamlit/config.toml # Theme
-└── docs/screenshots/      # Images used in this README
+├── demo.gif               # Animated walkthrough used in this README
+└── Screenshot_*.png       # Screenshots used in this README
 ```
 
 ## Data
