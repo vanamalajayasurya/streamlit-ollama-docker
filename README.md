@@ -35,33 +35,44 @@
 
 ## Screenshots
 
-### Screen candidates
-Add the job on the left and the resumes on the right, choose whether to generate interview questions, then press **Screen resumes**.
+<h3>Screen candidates</h3>
+<p>Add the job on the left and the resumes on the right, choose whether to generate interview questions, then press <b>Screen resumes</b>.</p>
 
-![Screen candidates](Screenshot_2026-10-25_233505.png)
+<p align="center">
+  <img src="Screenshot_2026-10-25_233505.png" alt="Screen candidates" width="900" />
+</p>
 
-![Job and resume form](Screenshot_2026-10-25_235117.png)
+<p align="center">
+  <img src="Screenshot_2026-10-25_235117.png" alt="Job and resume form" width="900" />
+</p>
 
-### Candidates
-Saved results grouped by job, with filters, status changes and CSV export.
+<h3>Candidates</h3>
+<p>Saved results grouped by job, with filters, status changes and CSV export.</p>
 
-![Candidates](Screenshot_2026-10-25_233448.png)
+<p align="center">
+  <img src="Screenshot_2026-10-25_233448.png" alt="Candidates" width="900" />
+</p>
 
-### Dashboard
-A quick look at the whole hiring pipeline across every job.
+<h3>Dashboard</h3>
+<p>A quick look at the whole hiring pipeline across every job.</p>
 
-![Dashboard](Screenshot_2026-10-25_233520.png)
+<p align="center">
+  <img src="Screenshot_2026-10-25_233520.png" alt="Dashboard" width="900" />
+</p>
 
-### Chat
-Ask questions or chat with an uploaded PDF. Turn on **Speak replies** to hear answers read aloud.
+<h3>Chat</h3>
+<p>Ask questions or chat with an uploaded PDF. Turn on <b>Speak replies</b> to hear answers read aloud.</p>
 
-![Chat](Screenshot_2026-10-25_233616.png)
+<p align="center">
+  <img src="Screenshot_2026-10-25_233616.png" alt="Chat" width="900" />
+</p>
 
-### Resume score
-Check how complete and strong a resume is without a job description.
+<h3>Resume score</h3>
+<p>Check how complete and strong a resume is without a job description.</p>
 
-![Resume score](Screenshot_2026-10-25_233632.png)
-
+<p align="center">
+  <img src="Screenshot_2026-10-25_233632.png" alt="Resume score" width="900" />
+</p>
 ## Tech stack
 
 | Layer | Tools |
