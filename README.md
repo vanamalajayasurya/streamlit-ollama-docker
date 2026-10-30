@@ -33,47 +33,45 @@
 - **Accounts**: email and password sign-up (salted password hashes) and optional Google sign-in. Each user sees only their own jobs.
 - **Structured output**: model replies are validated against Pydantic schemas, so small models still return usable JSON.
 
-## Screenshots
-
 <h3>Screen candidates</h3>
 <p>Add the job on the left and the resumes on the right, choose whether to generate interview questions, then press <b>Screen resumes</b>.</p>
 
 <p align="center">
-  <img src="Screenshot_2026-10-25_233505.png" alt="Screen candidates" width="900" />
+  <img src="Screenshot%202026-10-25%20233505.png" alt="Screen candidates" width="900" />
 </p>
 
 <p align="center">
-  <img src="Screenshot_2026-10-25_235117.png" alt="Job and resume form" width="900" />
+  <img src="Screenshot%202026-10-25%20235117.png" alt="Job and resume form" width="900" />
 </p>
 
 <h3>Candidates</h3>
 <p>Saved results grouped by job, with filters, status changes and CSV export.</p>
 
 <p align="center">
-  <img src="Screenshot_2026-10-25_233448.png" alt="Candidates" width="900" />
+  <img src="Screenshot%202026-10-25%20233448.png" alt="Candidates" width="900" />
 </p>
 
 <h3>Dashboard</h3>
 <p>A quick look at the whole hiring pipeline across every job.</p>
 
 <p align="center">
-  <img src="Screenshot_2026-10-25_233520.png" alt="Dashboard" width="900" />
+  <img src="Screenshot%202026-10-25%20233520.png" alt="Dashboard" width="900" />
 </p>
 
 <h3>Chat</h3>
 <p>Ask questions or chat with an uploaded PDF. Turn on <b>Speak replies</b> to hear answers read aloud.</p>
 
 <p align="center">
-  <img src="Screenshot_2026-10-25_233616.png" alt="Chat" width="900" />
+  <img src="Screenshot%202026-10-25%20233616.png" alt="Chat" width="900" />
 </p>
 
 <h3>Resume score</h3>
 <p>Check how complete and strong a resume is without a job description.</p>
 
 <p align="center">
-  <img src="Screenshot_2026-10-25_233632.png" alt="Resume score" width="900" />
+  <img src="Screenshot%202026-10-25%20233632.png" alt="Resume score" width="900" />
 </p>
-## Tech stack
+
 
 | Layer | Tools |
 | --- | --- |
